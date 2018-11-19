@@ -3,24 +3,21 @@ html {
 }
 
 .navbar {
-	/*position: fixed;
-	width: 100%;*/
 	background-color: rgba(0,0,0,0.8);
+	opacity: 0.1;
 	position: fixed;
 	width: 100%;
 	z-index: 1;
-	height: 10vh;
+	color: #f3f3f3;
+	/*visibility: hidden;*/
 }
 
-.navbar-nav {
-	/*font-size: 1.2rem;*/
+.navbar:hover {
+	opacity: 1;
 }
 
 .navspace {
-	content: ".";
-	visibility: hidden;
-	background-color: green;
-	height: 10vh;
+	padding-top: 100px;
 }
 
 .landing-page {
@@ -34,7 +31,7 @@ html {
 
 #home {
 	height: 100vh;
-	/*background-color: red;*/
+	padding-top: 15vh;
 }
 
 .rounded-circle {
@@ -42,17 +39,17 @@ html {
 }
 
 #about {
-	height: 110vh;
-	/*background-color: blue;*/
+	height: 100vh;
 }
 
 .about-content {
-	height: 40vh;
+	height: 50vh;
+	padding-top: 5vh;
 	/*background-color: yellow;*/
 }
 
-.about-content-height {
-	height: 60vh;
+.about-subcontent {
+	height: 50vh;
 }
 
 #fa-i {
@@ -72,8 +69,13 @@ html {
 	height: 100vh;
 }
 
+#projects > .proj-content {
+	padding-top: 15vh;
+}
+
 #contact {
 	height: 100vh;
+	padding-top: 15vh;
 }
 
 #contact > .social {
@@ -81,14 +83,95 @@ html {
 	/*background-color: red;*/
 }
 
-#contact > .fb-i {
+#contact > .fb-i > a {
 	color: #3b5998;
 }
 
-#contact > .gl-i {
+#contact > .gh-i > a {
+	color: #333;
+}
+
+#contact > .gl-i > a {
 	color: #fc6d26;
 }
 
-#contact > .li-i {
+#contact > .li-i > a {
 	color: #4875B4;
+}
+
+footer {
+	background-color: #333;
+	color: #f3f3f3;
+	position: relative;
+	bottom: 0;
+}
+
+
+/*MOBILE SCREEN*/
+@media only screen and (max-width: 400px){
+
+	* {
+		font-size: .8rem;
+	}
+
+	.navbar, .navbar:hover {
+		opacity: 1;
+	}
+
+	.home-content {
+		position: relative;
+		top: 10%;
+	}
+
+	#about {
+		height: 100vh;
+	}
+
+	.about-content {
+		height: 35vh;
+	}
+
+	.about-subcontent {
+		height: 25vh;
+	}
+
+	#projects {
+		height: 300vh;
+	}
+
+}
+
+/*TABLET SCREEN */
+@media only screen and (min-width: 401px) and (max-width: 960px){
+
+	* {
+		font-size: .9rem;
+	}
+
+	.navbar, .navbar:hover {
+		opacity: 1;
+	}
+
+	.home-content {
+		position: relative;
+		top: 15%;
+	}
+
+	#about {
+		height: 125vh;
+	}
+
+	.about-content {
+		height: 45vh;
+	}
+
+	.about-subcontent {
+		height: 40vh;
+	}
+
+	#projects {
+		height: 350vh;
+	}
+
+
 }
