@@ -3,17 +3,15 @@ html {
 }
 
 .navbar {
-	background-color: rgba(0,0,0,0.8);
-	opacity: 0.1;
+	background-color: rgba(0,0,0,0.1);
 	position: fixed;
 	width: 100%;
 	z-index: 1;
 	color: #f3f3f3;
-	/*visibility: hidden;*/
 }
 
 .navbar:hover {
-	opacity: 1;
+	background-color: rgba(0,0,0,0.8);
 }
 
 .navspace {
@@ -115,7 +113,7 @@ footer {
 	}
 
 	.navbar, .navbar:hover {
-		opacity: 1;
+		background-color: rgba(0,0,0,0.8);
 	}
 
 	.home-content {
@@ -149,7 +147,7 @@ footer {
 	}
 
 	.navbar, .navbar:hover {
-		opacity: 1;
+		background-color: rgba(0,0,0,0.8);
 	}
 
 	.home-content {
