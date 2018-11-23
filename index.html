@@ -45,7 +45,7 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-      </div>
+      </div> 
     </div>
 </nav>
 
@@ -156,6 +156,13 @@
   </footer>
 
 
+  <script>
+      $(document).ready(function() {
+        $(".navbar-nav li a").click(function(event) {
+          $(".navbar-collapse").collapse("hide");
+        });
+      });
+    </script>
 
 </body>
 </html>
